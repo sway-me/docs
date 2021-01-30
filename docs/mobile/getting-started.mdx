@@ -1,0 +1,61 @@
+---
+title: "Mobile: Getting Started"
+sidebar_label: Getting Started
+---
+
+<div className="mobile" />
+<blockquote style={{fontSize:12}}>
+    Mobile icon set. Can be set to trigger to dark/light mode at dusk/dawn respectively.
+</blockquote>
+
+<br/>
+
+Sway Mobile provides a google-free rom that integrates all of your services.  Its built off of [LineageOS for MicroG](https://lineage.microg.org/) with your self hosted services configured.
+
+Termux (the terminal application) will access to the entire filesystem with an API similar to Debian's (however, you can install Arch).  Other notable features are:
+
+- A Termux shell consistent with your workstation
+- Default Lineage Apps disabled
+- The default launcher is set to Lawnchair
+
+
+:::note
+This asks for some proficiency in rom installation. If you get stuck, first look at the [screencast videos](#screencasts), then look at the related documentation.
+:::
+
+## Requisites
+
+In order to have the most effortless experience, we recommend you have a phone that is officially supported by the LineageOS project. Our Rom differs very little from LineageOS with MicroG. If you do not have an officially supported device, you need to load lineage,enable signature spoofing and install MicroG. See the [microG docs](https://github.com/microg/GmsCore/wiki/Signature-Spoofing) for more on this.
+
+### API and Accounts
+- OpenWeatherMap API Key
+
+## Installation
+
+1. Find the correct rom for your device [here](https://roms.sway-me.xyz)
+2. Check the signature with keytool (optional)
+`keytool -list -printcert -jarfile lineage-microG.zip`
+the printed fingerprints should match with these
+
+    ```
+    Certificate fingerprints:
+    MD5:    54:73:70:C6:4B:FE:31:88:ED:18:F5:DF:1E:08:EB:19
+    SHA1:   C1:BE:BA:F7:9A:57:74:B7:5B:82:D5:0A:36:60:24:99:00:98:5D:C7
+    SHA256: 8E:09:CB:8F:9F:28:DA:DB:A9:32:84:AD:7C:AC:F3:E7 \
+            58:56:54:09:49:31:9D:FD:CB:16:BC:11:09:DE:25:B0
+    ```
+3. Follow the installation guide for your device on the [LinageOS  wiki](https://wiki.lineageos.org/devices/)
+
+After installation you should have a screen similar to the one above.
+
+
+
+## Screencasts
+:::caution
+These screencasts give a general overview. Please follow the instruction for your device using the [LinageOS  wiki](https://wiki.lineageos.org/devices/).
+:::
+
+### Using ADB (asciinema)
+This video will guide you through downloading the dependencies unlocking the phone, installing TWRP,  and sideloading the rom.
+### Using TWRP
+

@@ -1,0 +1,29 @@
+---
+title: "TV: Getting Started"
+sidebar_label: Getting Started
+---
+<div className="tv"/>
+
+> Android TV Home Screen
+
+
+Sway TV is simplified version of the sway mobile rom. The recommended hardware is th rock pi (raspberry pi clone). This SBC has the required specs to handle 4k. This rock is packages as img with TWRP android recovery.  Just like a raspberry pi, it needs to be written to an sd sdcard. Under the hoos its stock android with google removed and sway android clients pre-installed.
+
+
+## Requisites
+### Hardware
+- [Rock Pi 4B 4G](https://www.seeedstudio.com/ROCK-PI-4-Model-C-p-4658.html), but 4c preferred.
+- microSD: At least 64G
+- Raspberry pi compatible remote
+- Hdmi cable
+- [dumb tv](https://geekydeck.com/best-dumb-tv/) (optional)
+
+## Installation
+
+1. Download the img from for  the 4b [here](https://minio.sway-me.xyz/tv/4b-gpt.img) and 4c [here](https://minio.sway-me.xyz/tv/4c-gpt.img).
+
+2. Run (replacing `X` with the letter assigned to your microSD):
+```
+sudo dd bs=4M if=sway-tv-gpt.img  of=/dev/sdX status=progress
+```
+3. Insert into RockPi and boot up.

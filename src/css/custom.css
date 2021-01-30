@@ -1,0 +1,232 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+@import url("https://minio.resistr.life/sway-me/shared/ui-kit/base.css");
+@import "icons.css";
+
+
+:root {
+    --ifm-color-primary: var(--text-color);
+    --ifm-code-font-size: 95%;
+    --code-highlight: #E7E9F2;
+    --text-color: slategrey;
+    --admonintion-text: slategrey;
+    --secondary-bg: var(--light-gray-grad);
+    --success-bg: var(--light-green-grad);
+    --info-bg: var(--light-blue-grad);
+    --warning-bg: var(--light-orange-grad);
+    --danger-bg: var(--light-red-grad);
+    --dev-dash-bg: url("../../static/img/dev-dash-light.png") no-repeat;
+    --workstation-bg: url("../../static/img/workstation-light.png") no-repeat;
+    --personal-dash-bg: url("../../static/img/personal-dash-light.png") no-repeat;
+    --mobile-bg: url("../../static/img/mobile-light.png") no-repeat;
+    --cast-bg: url("../../static/img/cast-light.png") no-repeat;
+    --tv-bg: url("../../static/img/tv-light.png") no-repeat;
+    --speaker-bg: url("../../static/img/speaker-light.png") no-repeat;
+    --watch-bg: url("../../static/img/watch-light.png") no-repeat;
+    --service-android-bg: url("../../static/img/service-android-light.png") no-repeat;
+}
+p {
+    font-size: 95%;
+}
+
+p a {
+    font-size: 105%;
+}
+
+p b {
+    font-family: var(--mono);
+}
+a code {
+    color: white;
+    font-weight: lighter;
+}
+
+[data-theme="dark"] {
+    --ifm-color-gray-900: var(--gray);
+    --ifm-background-surface-color: var(--bg) !important;
+    --ifm-background-color: var(--bg) !important;
+    --code-highlight: #000E1F;
+    --text-color: white;
+    --admonintion-text: white;
+    --secondary-bg: var(--dark-blue-grad);
+    --success-bg: var(--dark-green-grad);
+    --info-bg: var(--dark-cyan-grad);
+    --warning-bg: var(--dark-orange-grad);
+    --danger-bg: var(--dark-red-grad);
+    --dev-dash-bg: url("../../static/img/dev-dash-dark.png") no-repeat;
+    --workstation-bg: url("../../static/img/workstation-dark.png") no-repeat;
+    --personal-dash-bg: url("../../static/img/personal-dash-dark.png") no-repeat;
+    --mobile-bg: url("../../static/img/mobile-dark.png") no-repeat;
+    --cast-bg: url("../../static/img/cast-dark.png") no-repeat;
+    --tv-bg: url("../../static/img/tv-dark.png") no-repeat;
+    --speaker-bg: url("../../static/img/speaker-dark.png") no-repeat;
+    --watch-bg: url("../../static/img/watch-dark.png") no-repeat;
+    --service-android-bg: url("../../static/img/service-android-dark.png") no-repeat;
+}
+
+@media only screen and (max-width: 600px) {
+    .personal-dash, .dev-dash, .workstation{
+        height: 12rem;
+    }
+}
+
+.docusaurus-highlight-code-line {
+    background-color: var(--code-highlight);
+    display: block;
+    margin: 0 calc(-1 * var(--ifm-pre-padding));
+    padding: 0 var(--ifm-pre-padding);
+}
+
+/*These tag based rules were not applied and are repeated from base.css*/
+hr {
+    border: 1px solid var(--gray);
+}
+a {
+    color: var(--dark-blue);
+}
+
+blockquote {
+    border-left: var(--border);
+}
+
+.prism-code * {
+    font-family: var(--mono);
+}
+
+
+.admonition {
+    border: none;
+    box-shadow: var(--light-shadow);
+}
+
+.alert--secondary {
+    background: var(--secondary-bg);
+}
+
+.alert--success {
+    background: var(--success-bg)
+}
+
+.alert--info {
+    background: var(--info-bg)
+}
+
+.alert--warning {
+    background: var(--warning-bg)
+}
+
+.alert--danger {
+    background: var(--danger-bg);
+}
+
+.admonition * {
+    fill: white;
+    color: white;
+}
+
+.admonition-content p a {
+    color: var(--admonintion-text)
+}
+
+.alert--secondary p a {
+    color: white;
+}
+
+.alert--warning p a {
+    color: white;
+}
+
+.alert--success * {
+    fill: var(--admonintion-text);
+    color: var(--admonintion-text);
+}
+
+.alert--info * {
+    fill: var(--admonintion-text);
+    color: var(--admonintion-text);
+}
+
+
+nav * {
+    color: var(--text-color) !important;
+}
+
+code {
+    color: var(--text-color);
+}
+
+.header-gitlab-link {
+    content: '';
+    display: flex;
+    height: 24px;
+    width: 24px;
+    margin-right: 1em;
+    background: url("data:image/svg+xml,%3Csvg width='25' height='23' viewBox='0 0 25 23' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4.21261 0.328875C4.35503 -0.109566 4.97539 -0.109685 5.11781 0.328875L7.88681 8.85077L17.0816 8.85078L19.8506 0.328875C19.993 -0.109685 20.6134 -0.109566 20.7558 0.328875L24.9218 13.1506C25.0492 13.5428 24.9096 13.9724 24.576 14.2148L12.4842 23L0.392412 14.2148C0.0587922 13.9724 -0.0807712 13.5428 0.0466563 13.1506L4.21261 0.328875Z' fill='url(%23paint0_linear)'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear' x1='12.4842' y1='0' x2='12.4842' y2='23' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23FF8F58'/%3E%3Cstop offset='1' stop-color='%23FFC97C'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A") no-repeat;
+}
+
+.dev-dash {
+    height: 28rem;
+    background: var(--dev-dash-bg);
+    background-size:contain;
+    background-position:center;
+}
+
+.workstation {
+    height: 29rem;
+    background: var(--workstation-bg);
+    background-size:contain;
+    background-position:center center;
+}
+
+.personal-dash {
+    height: 29rem;
+    background: var(--personal-dash-bg);
+    background-size:contain;
+    background-position:center;
+}
+
+.mobile {
+    height: 18rem;
+    background: var(--mobile-bg);
+    background-size:contain;
+    background-position:center;
+    /*margin: -16px ;*/
+}
+.cast {
+    height: 26rem;
+    background: var(--cast-bg);
+    background-size:contain;
+    background-position:center;
+}
+.tv {
+    height: 23rem;
+    background: var(--tv-bg);
+    background-size:contain;
+    background-position:center;
+}
+.speaker {
+    height: 23rem;
+    background: var(--speaker-bg);
+    background-size:contain;
+    background-position:center;
+}
+.watch {
+    height: 23rem;
+    background: var(--watch-bg);
+    background-size:contain;
+    background-position:center;
+}
+
+.service-android {
+    height: 22rem;
+    background: var(--service-android-bg);
+    background-size:contain;
+    background-position:center;
+}
+
+

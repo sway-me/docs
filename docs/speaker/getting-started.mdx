@@ -1,0 +1,26 @@
+---
+title: "Speaker: Getting Started"
+sidebar_label: Getting Started
+---
+<div className="speaker"/>
+
+Sway Speaker is a smart speaker, with the [mycroft project](https://github.com/mycroftai) at its core. It uses castv2 and dlna. The required hardware is the [Respeaker Core v2](https://wiki.seeedstudio.com/ReSpeaker_Core_v2.0). You can use any speaker you want.
+
+## Requisites
+### Hardware
+- [Respeaker Core v2](https://wiki.seeedstudio.com/ReSpeaker_Core_v2.0)
+- microSD: At least 64G
+- 3.5 mm audio jack (there's a also a JST2.0 connector if that's how you roll)
+- Any speaker
+
+## Installation
+
+1. Download the img from from the  [here](https://minio.sway-me.xyz/imgs/speaker.img).
+
+2. Run (replacing `X` with the letter assigned to your microSD):
+```
+sudo dd bs=4M if=cast.img  of=/dev/sdX status=progress
+```
+3. Insert into Respeaker and boot up.
+
+4. Test by saying "hello mycroft".

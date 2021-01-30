@@ -1,0 +1,520 @@
+{
+  "devServices": [
+    {
+      "name": "postgres",
+      "description": " Relational database with support JSON and <a href='https://timescale.com'>time series</a>  support. Part of sway <a href='/dev-services/getting-started'>dev services</a>.",
+      "sourceUrls": {
+        "Backend Service": "https://github.com/postgres/postgres",
+        "Admin Client": "https://github.com/postgres/pgadmin4",
+        "Time Series Extension": "https://github.com/timescale/timescaledb"
+      }
+    },
+    {
+      "name": "mongodb",
+      "description": "NoSQL DB. The code is 'source available' aka 'look but don't touch'. Part of sway <a href='/dev-services/getting-started'>dev services</a>.",
+      "sourceUrls": {
+        "Backend Service": "https://github.com/mongodb/mongo",
+        "Admin FrontEnd (Mongo-Express)": "https://github.com/mongo-express/mongo-express"
+      }
+    },
+    {
+      "name": "minio",
+      "description": "S3 alternative aka Object Storage. Compatible with the AWS S3 API. Part of sway <a href='/dev-services/getting-started'>dev services</a>.",
+      "sourceUrls": {
+        "Backend Service": "https://github.com/minio/minio"
+      }
+    },
+    {
+      "name": "mariadb",
+      "description": "Popular mySQL open source fork. Part of sway <a href='/dev-services/getting-started'>dev services</a>.",
+      "sourceUrls": {
+        "Backend Service": "https://github.com/MariaDB/server",
+        "Admin Client": "https://github.com/phpmyadmin/phpmyadmin"
+      }
+    },
+    {
+      "name": "redis",
+      "description": "Backend key value store. Used mostly for caching requests. Part of sway <a href='/dev-services/getting-started'>dev services</a>.",
+      "sourceUrls": {
+        "Backend Service": "https://github.com/redis/redis",
+        "Admin Client (Commander": "https://github.com/joeferner/redis-commander"
+      }
+    },
+    {
+      "name": "bitwarden",
+      "description": "Secrets manager.  Optionally, you can have sway auto generate strong secrets and populate bitwarden upon setup. Supports yubikey. <b>There are two instances of Bitwarden.</b>  One to manage your <a href='/dev-services/getting-started'>dev secrets</a> and one one to manage your  <a href='/personal-services/getting-started'>personal secrets</a>. We use the rust based version for both",
+      "sourceUrls": {
+        "Main Repo": "https://github.com/dani-garcia/bitwarden_rs",
+        "CLI": "https://github.com/bitwarden/cli/",
+        "Android": "https://github.com/bitwarden/mobile"
+      }
+    },
+    {
+      "name": "emqx",
+      "description": "IoT MQTT Broker. AWS IoT alternative. Part of sway <a href='/dev-services/getting-started'>dev services</a>.",
+      "sourceUrls": {
+        "Main Repo": "https://github.com/emqx/emqx/"
+      }
+    },
+    {
+      "name": "hasura",
+      "description": "GraphQL backend as a service. Alternative to AWS AppSync. Part of sway <a href='/dev-services/getting-started'>dev services</a>.",
+      "sourceUrls": {
+        "Main Repo": "https://github.com/hasura/graphql-engine"
+      }
+    },
+    {
+      "name": "kafka",
+      "description": "Stream processing.  AWS Kinesis alternative.  Comes with schema registry and a grafana dashboard. Part of sway <a href='/dev-services/getting-started'>dev services</a>.",
+      "sourceUrls": {
+        "Admin Client": "https://github.com/confluentinc/cp-helm-charts",
+        "Backend Services": "https://github.com/apache/kafka"
+      }
+    },
+    {
+      "name": "keycloak",
+      "description": "Identity Managements. Alternative to AWS Cognito. Part of sway <a href='/dev-services/getting-started'>dev services</a>.",
+      "sourceUrls": {
+        "Main Repo": "https://github.com/keycloak/keycloak"
+      }
+    },
+    {
+      "name": "kong",
+      "description": "API Gateway. Supports Keycloak Auth. Part of sway <a href='/dev-services/getting-started'>dev services</a>.",
+      "sourceUrls": {
+        "Backend Service": "https://github.com/Kong/kong",
+        "Admin Client": "https://github.com/pantsel/konga"
+      }
+    },
+    {
+      "name": "garie",
+      "description": "Measure web page performance using a grafana dashboard. Part of sway <a href='/dev-services/getting-started'>dev services</a>.",
+      "sourceUrls": {
+        "Main Repo": "https://github.com/boyney123/garie"
+      }
+    },
+    {
+      "name": "gitlab",
+      "description": "Version control and CI. Part of sway <a href='/dev-services/getting-started'>dev services</a>.",
+      "sourceUrls": {
+        "Main Repo": "https://gitlab.com/gitlab-org/gitlab"
+      }
+    },
+    {
+      "name": "sentry",
+      "description": "Error monitoring. Part of sway <a href='/dev-services/getting-started'>dev services</a>.",
+      "sourceUrls": {
+        "Main Repo": "https://github.com/getsentry/onpremise"
+      }
+    },
+    {
+      "name": "loki",
+      "description": "Logging framework built for grafana. Alternative to AWS Cloudwatch. Part of sway <a href='/dev-services/getting-started'>dev services</a>.",
+      "sourceUrls": {
+        "Main Repo": "https://github.com/grafana/loki"
+      }
+    },
+    {
+      "name": "postal",
+      "description": "Mail server for apps.  Alternative to AWS SES. Part of sway <a href='/dev-services/getting-started'>dev services</a>.",
+      "sourceUrls": {
+        "Main Repo": "https://github.com/postalhq/postal"
+      }
+    },
+    {
+      "name": "gorush",
+      "description": "Push notification service for iOS and android.  Part of sway <a href='/dev-services/getting-started'>dev services</a>.",
+      "sourceUrls": {
+        "Main Repo": "https://github.com/appleboy/gorush"
+      }
+    },
+    {
+      "name": "textbelt",
+      "description": "API for outgoing SMS. Part of sway <a href='/dev-services/getting-started'>dev services</a>.",
+      "sourceUrls": {
+        "Main Repo": "https://github.com/typpo/textbelt"
+      }
+    },
+    {
+      "name": "traefik",
+      "description": "Container routing and cert management. Part of sway <a href='/dev-services/getting-started'>dev services</a>.",
+      "sourceUrls": {
+        "Main Repo": "https://github.com/traefik/traefik/"
+      }
+    },
+    {
+      "name": "matrix",
+      "description": "Team communication. Slack alternative. Web Client available at element.io.  Compatible with weechat. Part of sway <a href='/dev-services/getting-started'>dev services</a>.",
+      "sourceUrls": {
+        "Backend Service": "https://github.com/matrix-org/synapse/"
+      }
+    }
+  ],
+  "personalServices": [
+    {
+      "name": "jellyfin",
+      "description": "Multimedia suite designed to organize, manage, and share digital media files to networked devices. <b>There are two instances of Jellyfin.</b>  A public one and a local one. The local one is for local clients and  dlna casting. Part of sway <a href='/personal-services/getting-started'>personal services</a>.",
+      "sourceUrls": {
+        "Backend Services": "https://github.com/jellyfin/jellyfin",
+        "Android": "https://github.com/jellyfin/jellyfin-android",
+        "Android TV": "https://github.com/jellyfin/jellyfin-androidtv"
+      }
+    },
+    {
+      "name": "bitcore",
+      "description": "Crypto currency manager. Can host wallets of the most popular currencies. Compatible with bitpay debit card and <a href='#bitpay'>bitpay</a> for android. Part of sway <a href='/personal-services/getting-started'>personal services</a>.",
+      "sourceUrls": {
+        "Monorepo (CLI and Backend)": "https://github.com/bitpay/bitcore"
+      }
+    },
+    {
+      "name": "collabora",
+      "description": "Libre Office nextcloud app and android client.  Uses syncthing  to sync files. Uses nextcloud as a web frontend. Part of sway <a href='/personal-services/getting-started'>personal services</a>.",
+      "sourceUrls": {
+        "Main Repo": "https://github.com/CollaboraOnline/online"
+      }
+    },
+    {
+      "name": "bitpay",
+      "description": "Formerly copay. <a href='#bitcore'>Bitcore</a> android client for managing cryptocurrencies. Part of sway <a href='/personal-services/getting-started'>personal services</a>.",
+      "sourceUrls": {
+        "Main Repo": "https://github.com/bitpay/wallet"
+      }
+    },
+    {
+      "name": "forecastie",
+      "description": "Weather app. Part of sway <a href='/personal-services/getting-started'>personal services</a>.",
+      "sourceUrls": {
+        "Android": "https://github.com/martykan/forecastie"
+      }
+    },
+    {
+      "name": "home-assistant",
+      "description": "Home automation suite. Part of sway <a href='/personal-services/getting-started'>personal services</a>.",
+      "sourceUrls": {
+        "Backend Service": "https://github.com/home-assistant/core",
+        "Android App": "https://github.com/home-assistant/android",
+        "CLI": "https://github.com/home-assistant-ecosystem/home-assistant-cli"
+      }
+    },
+    {
+      "name": "joplin",
+      "description": "Markdown first note manager. Can use any external editor. Syncs with <a href='#nextcloud'>Nextcloud</a>. Part of sway <a href='/personal-services/getting-started'>personal services</a>.",
+      "sourceUrls": {
+        "Main Repo": "https://github.com/laurent22/joplin"
+      }
+    },
+    {
+      "name": "calibre-web",
+      "description": "Web Client for ebooks. Part of sway <a href='/personal-services/getting-started'>personal services</a>.",
+      "sourceUrls": {
+        "Main  Repo": "https://github.com/janeczku/calibre-web/"
+      }
+    },
+    {
+      "name": "mastodon",
+      "description": "Twitter with better privacy. Part of sway <a href='/personal-services/getting-started'>personal services</a>.",
+      "sourceUrls": {
+        "Main Repo": "https://github.com/tootsuite/mastodon/",
+        "Android (Tusky)": "https://github.com/tuskyapp/Tusky",
+        "CLI": "https://github.com/ihabunek/toot"
+      }
+    },
+    {
+      "name": "mycroft",
+      "description": "AI platform/Smart Assistant. Part of sway <a href='/personal-services/getting-started'>personal services</a>.",
+      "sourceUrls": {
+        "Main Repo": "https://github.com/mycroftai/mycroft-core"
+      }
+    },
+    {
+      "name": "paperless",
+      "description": "Document management. Part of sway <a href='/personal-services/getting-started'>personal services</a>.",
+      "sourceUrls": {
+        "Backend Service": "https://github.com/the-paperless-project/paperless",
+        "Android": "https://github.com/bauerj/paperless_app",
+        "CLI": "https://github.com/stgarf/paperless-cli"
+      }
+    },
+    {
+      "name": "nextcloud",
+      "description": "Groupware service.  It connects orgzly, joplin, simple-contacts, simple-calendar via nextcloud's DAV servers. Part of sway <a href='/personal-services/getting-started'>personal services</a>.",
+      "sourceUrls": {
+        "Backend Service": "https://github.com/nextcloud/server"
+      }
+    },
+    {
+      "name": "photoprism",
+      "description": "Photo management with deep learning. Uses syncthing to sync with clients. Part of sway <a href='/personal-services/getting-started'>personal services</a>.",
+      "sourceUrls": {
+        "Main Repo": "https://github.com/photoprism"
+      }
+    },
+    {
+      "name": "syncthing",
+      "description": "Used to sync files between personal services and clients. Linux based clients use a local web server that runs as a daemon service. While android  based clients, uses the app.  Part of sway <a href='/personal-services/getting-started'>personal services</a>.",
+      "sourceUrls": {
+        "Backend Service": "https://github.com/syncthing/syncthing",
+        "Android": "https://github.com/syncthing/syncthing-android"
+      }
+    },
+    {
+      "name": "weechat",
+      "description": "Centralizes all chat application. IRC, matrix, discord, and telegram. Part of sway <a href='/personal-services/getting-started'>personal services</a>.",
+      "sourceUrls": {
+        "Main Repo": "https://github.com/weechat/weechat"
+      }
+    },
+    {
+      "name": "funkwhale",
+      "description": "Music Server inspired by grooveshark. Users can easily share their library with others. Part of sway <a href='/personal-services/getting-started'>personal services</a>.",
+      "sourceUrls": {
+        "Self hosted Gitlab": "https://dev.funkwhale.audio"
+      }
+    },
+    {
+      "name": "hydroxide",
+      "description": "Third party Protonmail bridge. Exposes your protonmail account data as smtp, imap and cardDAV servers. Part of sway <a href='/personal-services/getting-started'>personal services</a>.",
+      "sourceUrls": {
+        "Main Repo": "https://github.com/emersion/hydroxide"
+      }
+    },
+    {
+      "name": "selfoss",
+      "description": "RSS reader. Part of sway <a href='/personal-services/getting-started'>personal services</a>.",
+      "sourceUrls": {
+        "Main Repo": "https://github.com/fossar/selfoss"
+      }
+    }
+  ],
+  "androidClients": [
+    {
+      "name": "microg",
+      "description": "Android client that reimplements google's proprietary services. <a href='/home/resister/Code/Build/sway/docs/docs/mobile/getting-started.mdx'>Signature spoofing</a> must be enabled.",
+      "sourceUrls": {
+        "Main Repo": "https://github.com/microg/GmsCore"
+      }
+    },
+    {
+      "name": "antennapod",
+      "description": "Android podcast client. Uses Syncthing to sync a <code>podcasts.xml</code> file, which lists all your podcasts feeds.",
+      "sourceUrls": {
+        "Android": "https://github.com/AntennaPod/AntennaPod"
+      }
+    },
+    {
+      "name": "weechat-android",
+      "description": "Third party android client for weechat.",
+      "sourceUrls": {
+        "Main Repo": "https://github.com/ubergeek42/weechat-android"
+      }
+    },
+    {
+      "name": "glasnost",
+      "description": "Third party android client for gitlab. Supports multiple hosts, fingerprint auth,  repo browsing and merge requests.",
+      "sourceUrls": {
+        "Main Repo": "https://gitlab.com/puskin/Glasnost"
+      }
+    },
+    {
+      "name": "k9-mail",
+      "description": "An android email client with a neomutt lineage.",
+      "sourceUrls": {
+        "Main Repo": "https://github.com/k9mail/k-9"
+      }
+    },
+    {
+      "name": "librera",
+      "description": "An android ebook client.  Syncing is done via syncthing.  Syncs with main calibre-web ebook directory.",
+      "sourceUrls": {
+        "Main Repo": "https://github.com/foobnix/LibreraReader"
+      }
+    },
+    {
+      "name": "orgzly",
+      "description": "An android <a href='https://orgmode.org'>org-mode</a> client. Syncing is done via nextcloud.",
+      "sourceUrls": {
+        "Main Repo": "https://github.com/orgzly/orgzly-android"
+      }
+    },
+    {
+      "name": "otter",
+      "description": "An android client for funkwhale.",
+      "sourceUrls": {
+        "Main Repo": "https://github.com/apognu/otter"
+      }
+    },
+    {
+      "name": "reader",
+      "description": "An android client for selfoss.",
+      "sourceUrls": {
+        "Main Repo": "https://github.com/aminecmi/ReaderforSelfoss"
+      }
+    },
+    {
+      "name": "simple-calendar",
+      "description": "An android contacts client. Syncing is done via dav5x on the android side and  <a href='#nextcloud'>nextcloud</a> on the server sie.",
+      "sourceUrls": {
+        "Main Repo": "https://github.com/SimpleMobileTools/Simple-Calendar"
+      }
+    },
+    {
+      "name": "simple-contacts",
+      "description": "An android contacts client. Syncing is done via dav5x on the android side and  <a href='#nextcloud'>nextcloud</a> on the server sie.",
+      "sourceUrls": {
+        "MAin Repo": "https://github.com/SimpleMobileTools/Simple-Contacts"
+      }
+    },
+    {
+      "name": "simple-gallery",
+      "description": "An android photo client.  Syncing is done via syncthing.  Syncs with main <a href='#photoprism'>photoprism</a> photo directory.",
+      "sourceUrls": {
+        "Simple Gallery": "https://github.com/SimpleMobileTools/Simple-Gallery"
+      }
+    },
+    {
+      "name": "termux",
+      "description": "An android terminal. Similar to Debian, but Arch linux can also be installed.",
+      "sourceUrls": {
+        "Main Repo": "https://github.com/termux/termux-app"
+      }
+    },
+    {
+      "name": "tusky",
+      "description": "An android client for mastodon.",
+      "sourceUrls": {
+        "Main Repo": "https://github.com/tuskyapp/Tusky"
+      }
+    },
+    {
+      "name": "voice",
+      "description": "An android audiobook client.  Syncing is done via syncthing.  Syncs with main audiobook directory.",
+      "sourceUrls": {
+        "Main Repo": "https://github.com/PaulWoitaschek/Voice/"
+      }
+    }
+  ],
+  "terminalClients": [
+    {
+      "name": "ncmpcpp",
+      "description": "Audio Terminal Client. Uses mopidy to connect funkwhale. Part of sway <a href='/workstation/getting/started'>workstation</a>.",
+      "sourceUrls": {
+        "Main Repo": "https://github.com/ncmpcpp/ncmpcpp"
+      }
+    },
+    {
+      "name": "cava",
+      "description": "Audio visualizer for the terminal. Part of sway <a href='/workstation/getting/started'>workstation</a>.",
+      "sourceUrls": {
+        "Main Repo": "https://github.com/karlstav/cava"
+      }
+    },
+    {
+      "name": "epr",
+      "description": "Epub and pdf reader for the terminal. Can render code with correct formatting and searchable via grep. Part of sway <a href='/workstation/getting/started'>workstation</a>.",
+      "sourceUrls": {
+        "Main Repo": "https://github.com/wustho/epr"
+      }
+    },
+    {
+      "name": "newsboat",
+      "description": "Terminal RSS Reader. Relies on server based <code>feeds.xml<code> file. Part of sway <a href='/workstation/getting/started'>workstation</a>.",
+      "sourceUrls": {
+        "Main Repo": "https://github.com/newsboat/newsboat"
+      }
+    },
+    {
+      "name": "castero",
+      "description": "Ncurses style podcast player. Relies on server based <code>podcasts.xml</code> file. Part of sway <a href='/workstation/getting/started'>workstation</a>.",
+      "sourceUrls": {
+        "Main Repo": "https://github.com/xgi/castero"
+      }
+    },
+    {
+      "name": "ranger",
+      "description": "Terminal based file explorer. Uses feh for image previews. Part of sway <a href='/workstation/getting/started'>workstation</a>.",
+      "sourceUrls": {
+        "Main Repo": "https://github.com/ranger/ranger"
+      }
+    },
+    {
+      "name": "feh",
+      "description": "Minimalist image rendering cli. Part of sway <a href='/workstation/getting/started'>workstation</a>.",
+      "sourceUrls": {
+        "Main Repo": "https://github.com/derf/feh"
+      }
+    },
+    {
+      "name": "mpv",
+      "description": "Video player cli. Part of sway <a href='/workstation/getting/started'>workstation</a>",
+      "sourceUrls": {
+        "Main Repo": "https://github.com/mpv-player/mpv"
+      }
+    },
+    {
+      "name": "khal",
+      "description": "Terminal based CalDAV client.",
+      "sourceUrls": {
+        "Main Repo": "https://github.com/pimutils/khal"
+      }
+    },
+    {
+      "name": "khard",
+      "description": "Terminal based CardDav client.",
+      "sourceUrls": {
+        "Main Repo": "https://github.com/scheibler/khard"
+      }
+    },
+    {
+      "name": "emacs",
+      "description": "Sway uses Doom emacs. Maintained configurations you can start with.",
+      "sourceUrls": {
+        "Main Repo": "https://github.com/hlissner/doom-emacs"
+      }
+    },
+    {
+      "name": "neomutt",
+      "description": "Terminal based email client. Uses a modified version of Luke Smith's mutt-wizard.",
+      "sourceUrls": {
+        "Main Repo": "https://github.com/LukeSmithxyz/mutt-wizard"
+      }
+    }
+  ],
+  "publicWebClients": [
+    {
+      "name": "glowing-bear",
+      "description": "Third party web client for weechat.",
+      "sourceUrls": {}
+    }
+  ],
+  "operatingSystems": [
+    {
+      "name": "debian",
+      "description": "OS for servers, cast and speaker. ",
+      "sourceUrls": {
+        "Main Repo": "https://github.com/glowing-bear/glowing-bear"
+      }
+    },
+    {
+      "name": "arch-linux",
+      "description": "Workstation OS",
+      "sourceUrls": {
+        "Directory of Repos": "https://git.archlinux.org/"
+      }
+    },
+    {
+      "name": "lineageos",
+      "description": "OS for the TV and mobile.",
+      "sourceUrls": {
+        "Main Repo": "https://github.com/LineageOS/android"
+      }
+    },
+    {
+      "name": "asteroidos",
+      "description": "Watch OS",
+      "sourceUrls": {
+        "Main Repo": "https://github.com/AsteroidOS/asteroid"
+      }
+    }
+  ]
+}

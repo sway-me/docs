@@ -45,7 +45,7 @@
       "description": "Secrets manager.  Optionally, you can have sway auto generate strong secrets and populate bitwarden upon setup. Supports yubikey. <b>There are two instances of Bitwarden.</b>  One to manage your <a href='/dev-services/getting-started'>dev secrets</a> and one one to manage your  <a href='/personal-services/getting-started'>personal secrets</a>. We use the rust based version for both",
       "sourceUrls": {
         "Main Repo": "https://github.com/dani-garcia/bitwarden_rs",
-        "CLI": "https://github.com/bitwarden/cli/",
+        "CLI": "https://github.com/bitwarden/cli",
         "Android": "https://github.com/bitwarden/mobile"
       }
     },
@@ -53,7 +53,7 @@
       "name": "emqx",
       "description": "IoT MQTT Broker. AWS IoT alternative. Part of sway <a href='/dev-services/getting-started'>dev services</a>.",
       "sourceUrls": {
-        "Main Repo": "https://github.com/emqx/emqx/"
+        "Main Repo": "https://github.com/emqx/emqx"
       }
     },
     {
@@ -139,14 +139,14 @@
       "name": "traefik",
       "description": "Container routing and cert management. Part of sway <a href='/dev-services/getting-started'>dev services</a>.",
       "sourceUrls": {
-        "Main Repo": "https://github.com/traefik/traefik/"
+        "Main Repo": "https://github.com/traefik/traefik"
       }
     },
     {
       "name": "matrix",
       "description": "Team communication. Slack alternative. Web Client available at element.io.  Compatible with weechat. Part of sway <a href='/dev-services/getting-started'>dev services</a>.",
       "sourceUrls": {
-        "Backend Service": "https://github.com/matrix-org/synapse/"
+        "Backend Service": "https://github.com/matrix-org/synapse"
       }
     }
   ],
@@ -208,14 +208,14 @@
       "name": "calibre-web",
       "description": "Web Client for ebooks. Part of sway <a href='/personal-services/getting-started'>personal services</a>.",
       "sourceUrls": {
-        "Main  Repo": "https://github.com/janeczku/calibre-web/"
+        "Main  Repo": "https://github.com/janeczku/calibre-web"
       }
     },
     {
       "name": "mastodon",
       "description": "Twitter with better privacy. Part of sway <a href='/personal-services/getting-started'>personal services</a>.",
       "sourceUrls": {
-        "Main Repo": "https://github.com/tootsuite/mastodon/",
+        "Main Repo": "https://github.com/tootsuite/mastodon",
         "Android (Tusky)": "https://github.com/tuskyapp/Tusky",
         "CLI": "https://github.com/ihabunek/toot"
       }
@@ -247,7 +247,7 @@
       "name": "photoprism",
       "description": "Photo management with deep learning. Uses syncthing to sync with clients. Part of sway <a href='/personal-services/getting-started'>personal services</a>.",
       "sourceUrls": {
-        "Main Repo": "https://github.com/photoprism"
+        "Main Repo": "https://github.com/photoprism/photoprism"
       }
     },
     {
@@ -346,7 +346,7 @@
     },
     {
       "name": "reader",
-      "description": "An android client for selfoss.",
+      "description": "An android client for selfoss rss reader.",
       "sourceUrls": {
         "Main Repo": "https://github.com/aminecmi/ReaderforSelfoss"
       }
@@ -390,7 +390,7 @@
       "name": "voice",
       "description": "An android audiobook client.  Syncing is done via syncthing.  Syncs with main audiobook directory.",
       "sourceUrls": {
-        "Main Repo": "https://github.com/PaulWoitaschek/Voice/"
+        "Main Repo": "https://github.com/PaulWoitaschek/Voice"
       }
     }
   ],
@@ -399,7 +399,7 @@
       "name": "ncmpcpp",
       "description": "Audio Terminal Client. Uses mopidy to connect funkwhale. Part of sway <a href='/workstation/getting/started'>workstation</a>.",
       "sourceUrls": {
-        "Main Repo": "https://github.com/ncmpcpp/ncmpcpp"
+        "Main Repo": "https://github.com/arybczak/ncmpcpp"
       }
     },
     {

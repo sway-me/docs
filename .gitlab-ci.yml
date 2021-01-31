@@ -1,0 +1,23 @@
+image: yarnpkg/node-yarn
+stages:
+  - build
+  - staging
+
+build:
+  stage:  build
+  script:
+    - yarn build
+
+
+
+staging:
+  image:
+    name: minio/mc
+    entrypoint: ['']
+  stage: staging
+  before_script:
+    - mc alias set minio $MINIO_HOST $MINIO_ACCESS_KEY $MINIO_SECRET_KEY
+  script:
+    - mc cp build minio/sway-me/docs
+  only:
+    - master

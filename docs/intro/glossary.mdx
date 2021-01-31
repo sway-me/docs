@@ -3,61 +3,13 @@ title:  Glossary
 sidebar_label: Glossary
 hide_table_of_contents: true
 ---
-import {useEffect, useState} from "react";
-import data from '../../data/glossary.json'
-import {round, flattenAndSort} from '../../src/js/utils.mjs'
-
-
-<!--
-TODO: handle gitlab urls
-            fetch(`https://api.github.com/repos/${owner}/${repo}`, {cache: 'force-cache'})
-                .then(res => res.json())
-                .then(({stargazers_count: stars}) => setStars(round(stars)))
-                .catch(console.error)
--->
-
-
-export const LinkWithStars = ({name, link}) => {
-    const [stars, setStars] = useState('')
-    useEffect(() => {
-            const arr = link.split('/')
-            const owner = arr[arr.length - 2]
-            const repo = arr[arr.length - 1]
-        }
-        , [stars])
-    return <span> &nbsp;| &nbsp; <a
-        href={link}>{name}</a> <b>{stars}</b> 🌟</span>
-}
-
-export const GlossaryItems = () => {
-    return flattenAndSort(data).map(({
-                                         name,
-                                         description,
-                                         sourceUrls
-                                     }) => (
-        <div key={name}>
-            <hr/>
-            <div style={{display: "flex", alignItems: 'center'}}>
-                <div className={name}/>
-                <div style={{marginLeft: '1.5rem'}}>
-                    <h3 id={name} style={{marginBottom: 0}}>{name}</h3>
-                    <p style={{marginBottom: 0}}
-                       dangerouslySetInnerHTML={{__html: description}}/>
-                    <div>
-                        <b>Source Code:</b>
-                        {Object.keys(sourceUrls).map(key => <LinkWithStars
-                            key={key}
-                            name={key}
-                            link={sourceUrls[key]}/>)}
-                    </div>
-                </div>
-            </div>
-        </div>))
-}
-
 
 The following is a list of all software used by Sway (dev services, personal services, android clients, terminal clients, etc.)
 
 <br/>
 
-<GlossaryItems/>
+import Items from "../../src/components/Items";
+import data from "../../data/glossary.json";
+
+<Items data={data}/>
+

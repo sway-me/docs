@@ -1,12 +1,22 @@
-image: yarnpkg/node-yarn
+image: node:14
 stages:
   - build
   - staging
 
+cache:
+  key: ${CI_COMMIT_REF_SLUG}
+  paths:
+    - .yarn/
+
+before_script:
+  - npm ci --cache .npm --prefer-offline
+
+
 build:
   stage:  build
+  before_script:
+    - yarn
   script:
-    - yarn install
     - yarn build
 
 

@@ -13,6 +13,9 @@ build:
     - yarn install
   script:
     - yarn build
+  artifacts:
+    paths:
+      - build/
 
 
 
@@ -26,5 +29,7 @@ staging:
   script:
     - mc mb -p minio/sway-me/docs
     - mc cp build minio/sway-me/docs
+  dependencies:
+    - build
   only:
     - master

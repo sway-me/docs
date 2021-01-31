@@ -28,7 +28,7 @@ staging:
     - mc alias set minio $MINIO_HOST $MINIO_ACCESS_KEY $MINIO_SECRET_KEY
   script:
     - mc mb -p minio/sway-me/docs
-    - mc cp build minio/sway-me/docs
+    - mc cp --recursive build minio/sway-me/docs
   dependencies:
     - build
   only:

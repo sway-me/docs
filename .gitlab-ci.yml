@@ -3,19 +3,18 @@ stages:
   - build
   - staging
 
-cache:
-  key: ${CI_COMMIT_REF_SLUG}
-  paths:
-    - .yarn/
+
 
 before_script:
-  - npm ci --cache .npm --prefer-offline
+  - yarn install
 
+cache:
+  paths:
+    - node_modules
+    - "packages/*/node_modules"
 
 build:
   stage:  build
-  before_script:
-    - yarn
   script:
     - yarn build
 

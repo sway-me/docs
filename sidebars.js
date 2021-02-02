@@ -1,7 +1,7 @@
 module.exports = {
   sidebar: {
     Intro: ["intro/intro", "intro/glossary"],
-    "☁\u2003 Dev Services": [
+    "☁️\u2003 Dev Services": [
       "dev-services/getting-started",
       "dev-services/recommended-hardware",
     ],

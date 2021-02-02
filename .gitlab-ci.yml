@@ -1,5 +1,6 @@
 image: node:14
 stages:
+  - verify
   - build
   - staging
 
@@ -7,28 +8,53 @@ cache:
   paths:
     - node_modules
 
-build:
-  stage:  build
+before_script:
+  - yarn install
+
+format:
+  stage: verify
+  script: yarn format
+lint:
+  stage: verify
+  script: yarn lint
+
+depcheck:
+  stage: verify
+  script: yarn depcheck
+
+
+
+quality:
+  stage: verify
   before_script:
-    - yarn install
+    - echo "Runnin Quality"
+  image: docker:stable
+  variables:
+    DOCKER_DRIVER: overlay2
+  services:
+    - docker:stable-dind
+  script:
+    - docker run --env CODECLIMATE_CODE="$PWD" --volume "$PWD":/code --volume /var/run/docker.sock:/var/run/docker.sock --volume /tmp/cc:/tmp/cc codeclimate/codeclimate analyze -f json > quality.json
+  artifacts:
+    reports:
+      codequality: quality.json
+
+build:
+  stage: build
   script:
     - yarn build
   artifacts:
     paths:
       - build/
-
-
+  only:
+    - master
 
 staging:
-  image:
-    name: minio/mc
-    entrypoint: ['']
   stage: staging
   before_script:
-    - mc alias set minio $MINIO_HOST $MINIO_ACCESS_KEY $MINIO_SECRET_KEY
+    - yarn global add surge
   script:
-    - mc mb -p minio/sway-me/docs
-    - mc cp --recursive build minio/sway-me/docs
+    - surge build/  docs.stage.sway-me.xyz
   dependencies:
     - build
   only:

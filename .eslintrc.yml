@@ -1,0 +1,17 @@
+plugins:
+  - security
+extends:
+  - "eslint:recommended"
+  - airbnb-base
+  - prettier
+  - plugin:security/recommended
+  - plugin:react/recommended
+rules:
+  security/detect-object-injection: 0
+
+  import/extensions: 0
+  react/prop-types: 0
+
+settings:
+  react:
+    version: detect

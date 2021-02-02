@@ -2,7 +2,7 @@ module.exports = {
   title: "S W A Y",
   tagline: "Selfhost your ecosystem",
   url: "https://docs.sway-me.xyz",
-  baseUrl: "/sway-me/docs/build/index.html/",
+  baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/logo.svg",

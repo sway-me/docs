@@ -51,21 +51,13 @@ build:
   only:
     - master
 
-update-data:
-  stage: staging
-  script:
-    - yarn update-data
-  dependencies:
-    - build
-  only:
-    - master
-
 staging:
   stage: staging
   before_script:
     - rm -rf build/nonbuild
     - yarn global add surge
   script:
+    - yarn update-data
     - surge build/  docs.stage.sway-me.xyz
   dependencies:
     - build

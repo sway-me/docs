@@ -9,10 +9,10 @@ export default function Icons({ data, size = 60 }) {
         padding: "1rem 2rem",
       }}
     >
-      {data.map(({ name, url }, i) => (
+      {data.map(({ name }, i) => (
         <a
           key={i}
-          href={url}
+          href={`/intro/glossary#${name}`}
           style={{
             display: "flex",
             flexDirection: "column",
@@ -21,6 +21,7 @@ export default function Icons({ data, size = 60 }) {
             color: "slategray",
             marginRight: "1rem",
             fontSize: 11,
+            cursor: "pointer",
           }}
         >
           <div style={{ height: size, width: size }} className={name} />

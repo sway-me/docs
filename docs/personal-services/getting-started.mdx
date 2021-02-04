@@ -5,30 +5,10 @@ sidebar_label: Getting Started
 
 
 import Icons from '../../src/components/Icons';
+import glossary from '../../data/glossary.json';
 
-<!-- TODO: Fix data-->
 <Icons
-    data={[
-    {name: 'bitcore'},
-    {name: 'nextcloud'},
-    {name: 'photoprism'},
-    {name: 'glowing-bear'},
-    {name: 'jellyfin'},
-    {name: 'mastodon'},
-    {name: 'paperless'},
-    {name: 'selfoss'},
-    {name: 'funkwhale'},
-    {name: 'calibre-web'},
-    {name: 'syncthing'},
-    {name: 'mycroft'},
-    {name: 'bitwarden'},
-    {name: 'home-assistant'},
-]}/>
-
-
-<blockquote style={{fontSize:12}}>
-    Personal Services and links to their respective source code.
-</blockquote>
+    data={glossary.filter(({category}) => category === 'personalServices')}/>
 
 <br/>
 
@@ -58,7 +38,10 @@ If you are also installing `dev-services` you can put all dev and personal servi
 ![](../../static/img/dev-services-minimal.jpg)
 
 <blockquote style={{fontSize: 14}}>
-    Working Setup with three regular servers. All <code>dev-services</code> and <code>personal-services</code> are distributed amongst them. If you choose two forgo either `dev-services` or `personal-services` , then you only need two servers.
+    Working Setup with three regular servers.
+    All <code>dev-services</code> and <code>personal-services</code> are
+    distributed amongst them. If you choose two forgo either `dev-services` or
+    `personal-services` , then you only need two servers.
 </blockquote>
 
 

@@ -40,6 +40,7 @@ quality:
   only:
     - master
 
+
 build:
   stage: build
   script:
@@ -47,6 +48,15 @@ build:
   artifacts:
     paths:
       - build/
+  only:
+    - master
+
+update-data:
+  stage: staging
+  script:
+    - yarn update-data
+  dependencies:
+    - build
   only:
     - master
 

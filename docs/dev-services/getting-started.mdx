@@ -4,35 +4,11 @@ sidebar_label: Getting Started
 ---
 
 import Icons from '../../src/components/Icons';
+import glossary from '../../data/glossary.json';
 
-<!-- TODO: Fix data-->
-<Icons data={[
-    {name: 'postgres'},
-    {name: 'minio'},
-    {name: 'mongodb'},
-    {name: 'redis'},
-    {name: 'mariadb'},
-    {name: 'gitlab'},
-    {name: 'postal'},
-    {name: 'keycloak'},
-    {name: 'kong'},
-    {name: 'garie'},
-    {name: 'sentry'},
-    {name: 'loki'},
-    {name: 'emqx'},
-    {name: 'hasura'},
-    {name: 'matrix'},
-    {name: 'traefik'},
-    {name: 'gorush'},
-    {name: 'textbelt'},
-]}/>
+<Icons
+    data={glossary.filter(({category}) => category === 'devServices')}/>
 
-
-<blockquote style={{
-    fontSize: 12
-}}>
-    Dev Services and links to their respective source code.
-</blockquote>
 
 Dev Services are used to build a modern apps. It aims to have feature parity or surpass a cloud provider's most popular features.
 

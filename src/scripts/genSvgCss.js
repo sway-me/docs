@@ -1,9 +1,8 @@
 const { writeFileSync, readFileSync } = require("fs");
-const { flattenAndSort } = require("./utils");
 
-const names = flattenAndSort(
-  JSON.parse(readFileSync("data/glossary.json").toString())
-).map(({ name }) => name);
+const names = JSON.parse(readFileSync("data/glossary.json").toString()).map(
+  ({ name }) => name
+);
 
 // jacked:https://github.com/F1LT3R/svg-to-dataurl/blob/master/index.js, 'light'
 const svgDataRule = (name, svgStr) => {

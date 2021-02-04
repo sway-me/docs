@@ -25,13 +25,9 @@ const fetchGitlab = async (owner, name) => {
 
 const fetchGithub = async (owner, name) => {
   const gitHubQuery = `{ repository(name: "${name}", owner: "${owner}"){ stargazerCount } }`;
-  const {
-    data: {
-      repository: { stargazerCount },
-    },
-  } = await fetchData("https://api.github.com/graphql", gitHubQuery);
-
-  return stargazerCount;
+  const result = await fetchData("https://api.github.com/graphql", gitHubQuery);
+  console.log(result);
+  // return result.data
 };
 
 const fetchRating = (url) => {
@@ -46,7 +42,6 @@ const fetchRating = (url) => {
 };
 
 const glossary = JSON.parse(readFileSync("data/glossary.json").toString());
-
 const updateGlossary = async () => {
   const payload = await Promise.all(
     glossary.map(async ({ options, ...rest }) => ({

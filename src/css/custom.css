@@ -268,11 +268,3 @@ code {
 tr:nth-child(even) {
   background: white !important;
 }
-
-/*.antennapod,.arch-linux,.asteroidos,.bitcore,.bitpay,.bitwarden,.calibre-web,.castero,.cava,.collabora,.debian,.emacs,.emqx,.epr,.feh,.forecastie,.funkwhale,.garie,.gitlab,.glasnost,.glowing-bear,.gorush,.hasura,.home-assistant,.hydroxide,.jellyfin,.joplin,.k9-mail,.kafka,.keycloak,.khal,.khard,.kong,.librera,.lineageos,.loki,.mariadb,.mastodon,.matrix,.microg,.minio,.mongodb,.mpv,.mycroft,.ncmpcpp,.neomutt,.newsboat,.nextcloud,.orgzly,.otter,.paperless,.photoprism,.postal,.postgres,.ranger,.reader,.redis,.selfoss,.sentry,.simple-calendar,.simple-contacts,.simple-gallery,.syncthing,.termux,.textbelt,.traefik,.tusky,.voice,.weechat,.weechat-android {*/
-/*    height: 75px;*/
-/*    width: 75px;*/
-/*    flex-shrink: 0;*/
-/*    background-size:contain;*/
-/*background-position:center;*/
-/*}*/

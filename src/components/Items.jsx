@@ -1,21 +1,25 @@
 import React from "react";
-import { flattenAndSort } from "../scripts/utils";
+import { round } from "../scripts/utils";
 
-const LinkWithStars = ({ name, link, stars }) => (
+const LinkWithStars = ({ name, link, rating }) => (
   <span>
     {" "}
-    &nbsp;| &nbsp; <a href={link}>{name}</a> <b>{stars}</b> 🌟
+    &nbsp;| &nbsp; <a href={link}>{name}</a> <b>{round(rating)}</b> 🌟
   </span>
 );
 
 export default ({ data }) =>
-  flattenAndSort(data).map(({ name, description, sourceUrls }) => (
+  data.map(({ name, description, options }) => (
     <div key={name}>
       <hr />
       <div style={{ display: "flex", alignItems: "center" }}>
         <div className={name} />
         <div style={{ marginLeft: "1.5rem" }}>
-          <h3 id={name} style={{ marginBottom: 0 }}>
+          <h3>
+            <a
+              id={name}
+              className="anchor enhancedAnchor_node_modules-@docusaurus-theme-classic-lib-next-theme-Heading-"
+            />
             {name}
           </h3>
           <p
@@ -24,8 +28,8 @@ export default ({ data }) =>
           />
           <div>
             <b>Source Code:</b>
-            {Object.keys(sourceUrls).map((key) => (
-              <LinkWithStars key={key} name={key} link={sourceUrls[key]} />
+            {options.map((props, i) => (
+              <LinkWithStars key={i} name={name} {...props} />
             ))}
           </div>
         </div>

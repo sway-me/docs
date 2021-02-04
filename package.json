@@ -9,7 +9,8 @@
     "deploy": "docusaurus deploy",
     "serve": "docusaurus serve",
     "clear": "docusaurus clear",
-    "gen-css": "node --experimental-modules src/scripts/genSvgCss.js",
+    "gen-css": "node src/scripts/genSvgCss.js",
+    "update-data": "node src/scripts/updateData.js",
     "format": "prettier --write src/",
     "lint": "eslint --ext js,jsx src --quiet --fix",
     "lint-ci": "npx lint-gitlab-ci",
@@ -32,6 +33,7 @@
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-react": "^7.22.0",
     "eslint-plugin-security": "^1.4.0",
+    "node-fetch": "^2.6.1",
     "prettier": "^2.2.1"
   },
   "browserslist": {

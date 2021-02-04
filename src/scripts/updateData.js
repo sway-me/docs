@@ -25,20 +25,23 @@ const fetchGitlab = async (owner, name) => {
 
 const fetchGithub = async (owner, name) => {
   const gitHubQuery = `{ repository(name: "${name}", owner: "${owner}"){ stargazerCount } }`;
-  const result = await fetchData("https://api.github.com/graphql", gitHubQuery);
-  console.log(result);
-  // return result.data
+  const {
+    data: {
+      repository: { stargazerCount },
+    },
+  } = await fetchData("https://api.github.com/graphql", gitHubQuery);
+  return stargazerCount;
 };
 
 const fetchRating = (url) => {
   const [owner, name] = url.split("/").slice(-2);
-  if (!owner || !name) {
-    return "";
+  if (url.includes("github.com")) {
+    return fetchGithub(owner, name);
   }
   if (url.includes("gitlab.com")) {
     return fetchGitlab(owner, name);
   }
-  return fetchGithub(owner, name);
+  return "";
 };
 
 const glossary = JSON.parse(readFileSync("data/glossary.json").toString());

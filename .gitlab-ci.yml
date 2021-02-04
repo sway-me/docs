@@ -44,6 +44,7 @@ quality:
 build:
   stage: build
   script:
+    - yarn update-data
     - yarn build
   artifacts:
     paths:
@@ -57,7 +58,6 @@ staging:
     - rm -rf build/nonbuild
     - yarn global add surge
   script:
-    - yarn update-data
     - surge build/  docs.stage.sway-me.xyz
   dependencies:
     - build

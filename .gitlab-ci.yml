@@ -23,11 +23,10 @@ depcheck:
   script: yarn depcheck
 
 
-
 quality:
   stage: verify
   before_script:
-    - echo "Runnin Quality"
+    - echo "Running Quality"
   image: docker:stable
   variables:
     DOCKER_DRIVER: overlay2
@@ -38,6 +37,8 @@ quality:
   artifacts:
     reports:
       codequality: quality.json
+  only:
+    - master
 
 build:
   stage: build
@@ -52,6 +53,7 @@ build:
 staging:
   stage: staging
   before_script:
+    - rm -rf build/nonbuild
     - yarn global add surge
   script:
     - surge build/  docs.stage.sway-me.xyz

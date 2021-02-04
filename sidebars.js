@@ -18,9 +18,6 @@ module.exports = {
     "🛰\u2003Cast": ["cast/getting-started", "cast/configuration"],
     "🔉\u2003Speaker": ["speaker/getting-started", "speaker/configuration"],
     "⌚\u2003Watch": ["watch/getting-started", "watch/configuration"],
-    "🚧\u2003Project Details": [
-      "details/unimplemented-dependencies",
-      "details/FAQ",
-    ],
+    "🚧\u2003Project Details": ["unimplemented-dependencies", "FAQ"],
   },
 };

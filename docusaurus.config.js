@@ -20,7 +20,7 @@ module.exports = {
     // },
     navbar: {
       logo: {
-        src: "https://minio.resistr.life/sway-me/shared/ui-kit/logo.svg",
+        src: "img/logo.svg",
       },
       items: [
         {
@@ -82,7 +82,6 @@ module.exports = {
         docs: {
           routeBasePath: "/",
           sidebarPath: require.resolve("./sidebars.js"),
-          // Please change this to your repo.
           editUrl: "https://gitlab.com/sway-me/docs",
         },
         theme: {

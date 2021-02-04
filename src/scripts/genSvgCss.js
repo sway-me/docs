@@ -18,7 +18,7 @@ const svgDataRule = (name, svgStr) => {
 const getFiles = (mode) =>
   names.map((name) => ({
     name,
-    file: readFileSync(`static/img/${mode}/${name}.svg`).toString(),
+    file: readFileSync(`static/nonbuild/${mode}/${name}.svg`).toString(),
   }));
 
 const root = `
@@ -50,4 +50,4 @@ ${names.map((name) => `.${name}`)} {
     background-position:center;
 }`;
 
-writeFileSync("src/css/icons.css", root + theme + classes);
+writeFileSync("src/css/svg.css", root + theme + classes);

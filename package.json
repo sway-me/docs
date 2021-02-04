@@ -9,13 +9,13 @@
     "deploy": "docusaurus deploy",
     "serve": "docusaurus serve",
     "clear": "docusaurus clear",
-    "gen-css": "node --experimental-modules src/scripts/genIconCss.js",
+    "gen-css": "node --experimental-modules src/scripts/genSvgCss.js",
     "format": "prettier --write src/",
     "lint": "eslint --ext js,jsx src --quiet --fix",
     "lint-ci": "npx lint-gitlab-ci",
     "depcheck": "npx depcheck --ignore-bin-package=true --skip-missing=true --ignores='@docusaurus/*,@mdx-js/*,clsx,eslint*' ",
     "quality": "codeclimate analyze",
-    "commit": "yarn format && yarn lint && yarn lint-ci && yarn depcheck && yarn quality && npx cz"
+    "commit": "yarn format && yarn lint && yarn lint-ci && yarn depcheck && yarn quality &&  yarn build && npx cz"
   },
   "dependencies": {
     "@docusaurus/core": "2.0.0-alpha.70",

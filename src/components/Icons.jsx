@@ -1,31 +1,34 @@
 import React from "react";
 
-export default function Icons({ data, size = 60 }) {
+export default function Icons({ data, size = 55 }) {
   return (
     <div
       style={{
         display: "flex",
         flexWrap: "wrap",
-        padding: "1rem 2rem",
+        justifyContent: "center",
       }}
     >
       {data.map(({ name }, i) => (
         <a
-          key={i}
-          href={`/intro/glossary#${name}`}
           style={{
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
-            padding: "1rem",
+            padding: "0.75rem",
             color: "slategray",
-            marginRight: "1rem",
-            fontSize: 11,
+            fontSize: "64%",
             cursor: "pointer",
           }}
+          key={i}
+          href={`/intro/glossary#${name}`}
         >
           <div style={{ height: size, width: size }} className={name} />
-          {name}
+          <div
+            style={{ wordWrap: "break-word", width: size, textAlign: "center" }}
+          >
+            {name}
+          </div>
         </a>
       ))}
     </div>

@@ -24,6 +24,11 @@ module.exports = {
       },
       items: [
         {
+          to: "/",
+          label: "intro",
+          position: "left",
+        },
+        {
           to: "dev-services/getting-started",
           label: "dev-services",
           position: "left",

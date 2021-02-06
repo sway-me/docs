@@ -43,6 +43,8 @@ quality:
 
 build:
   stage: build
+  tags:
+    - threadripper
   script:
     - yarn update-data
     - yarn build

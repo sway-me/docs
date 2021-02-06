@@ -25,6 +25,8 @@ depcheck:
 
 quality:
   stage: verify
+  tags:
+    - threadripper
   before_script:
     - echo "Running Quality"
   image: docker:stable
@@ -43,8 +45,6 @@ quality:
 
 build:
   stage: build
-  tags:
-    - threadripper
   script:
     - yarn update-data
     - yarn build

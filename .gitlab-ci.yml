@@ -4,6 +4,9 @@ stages:
   - build
   - staging
 
+tags:
+  - threadripper
+
 cache:
   paths:
     - node_modules
@@ -25,8 +28,6 @@ depcheck:
 
 quality:
   stage: verify
-  tags:
-    - threadripper
   before_script:
     - echo "Running Quality"
   image: docker:stable

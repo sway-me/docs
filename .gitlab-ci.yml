@@ -4,8 +4,6 @@ stages:
   - build
   - staging
 
-tags:
-  - threadripper
 
 cache:
   paths:
@@ -28,6 +26,8 @@ depcheck:
 
 quality:
   stage: verify
+  tags:
+    - threadripper
   before_script:
     - echo "Running Quality"
   image: docker:stable
@@ -46,6 +46,8 @@ quality:
 
 build:
   stage: build
+  tags:
+    - threadripper
   script:
     - yarn update-data
     - yarn build
@@ -57,6 +59,8 @@ build:
 
 staging:
   stage: staging
+  tags:
+    - threadripper
   before_script:
     - rm -rf build/nonbuild
     - yarn global add surge

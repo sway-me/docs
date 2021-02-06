@@ -25,6 +25,7 @@ depcheck:
 
 
 quality:
+  cache: {}
   stage: verify
   tags:
     - threadripper

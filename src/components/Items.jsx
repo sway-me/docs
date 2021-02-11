@@ -1,10 +1,10 @@
 import React from "react";
 import { round } from "../scripts/utils";
 
-const LinkWithStars = ({ name, link, rating }) => (
+const LinkWithStars = ({ name, url, rating }) => (
   <span>
     {" "}
-    &nbsp;| &nbsp; <a href={link}>{name}</a> <b>{round(rating)}</b> 🌟
+    &nbsp;| &nbsp; <a href={url}>{name}</a> <b>{round(rating)}</b> 🌟
   </span>
 );
 

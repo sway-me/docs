@@ -47,8 +47,6 @@ quality:
 
 build:
   stage: build
-  tags:
-    - threadripper
   script:
     - yarn update-data
     - yarn build
@@ -60,8 +58,6 @@ build:
 
 staging:
   stage: staging
-  tags:
-    - threadripper
   before_script:
     - rm -rf build/nonbuild
     - yarn global add surge

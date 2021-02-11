@@ -49,7 +49,7 @@ module.exports = {
         { to: "speaker/getting-started", label: "speaker", position: "left" },
         { to: "watch/getting-started", label: "watch", position: "left" },
         {
-          href: "https://github.com/facebook/docusaurus",
+          href: "https://gitlab.com/sway-me",
           position: "right",
           className: "header-gitlab-link",
           "aria-label": "Gitlab repository",

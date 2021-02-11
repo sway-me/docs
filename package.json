@@ -12,7 +12,7 @@
     "gen-css": "node src/scripts/genSvgCss.js",
     "update-data": "node src/scripts/updateData.js",
     "format": "prettier --write src/",
-    "lint-ci" : "http --quiet \"https://gitlab.com/api/v4/ci/lint?private_token=$GITLAB_TOKEN\" content=@./.gitlab-ci.yml",
+    "lint-ci" : "http --quiet \"https://gitlab.com/api/v4/ci/lint?private_token=$GITLAB_TOKEN\" content=@./.gitlab-ci.yml | grep invalid && exit 1 || exit 0",
     "lint": "eslint --ext js,jsx src --quiet --fix",
     "depcheck": "npx depcheck --ignore-bin-package=true --skip-missing=true --ignores='@docusaurus/*,@mdx-js/*,clsx,eslint*' ",
     "quality": "codeclimate analyze",

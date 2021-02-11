@@ -52,8 +52,8 @@ export default function UnimplementedModal({ href }) {
     storedState = JSON.parse(localStorage.getItem(href));
   }
   return (
-    !false &&
-    !false && (
+    !isScrollable &&
+    !storedState && (
       <RemoveScroll
         onClick={() => {
           setIsScrollable(true);

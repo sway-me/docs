@@ -232,7 +232,7 @@
     "options": [
       {
         "name": "Main Repo",
-        "url": "https://gitlab.com/gitlab-org/gitlab",
+        "url": "https://gitlab.com/gitlab-org/gitlab-foss",
         "rating": 2481
       }
     ]

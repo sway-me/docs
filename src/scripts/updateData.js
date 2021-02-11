@@ -6,7 +6,7 @@ const fetchData = (url, query) =>
   fetch(url, {
     method: "POST",
     headers: {
-      Authorization: `Bearer ${process.env.GITHUB_AUTH}`,
+      Authorization: `Bearer ${process.env.GITHUB_TOKEN}`,
       Accept: "application/json",
       "Content-Type": "application/json",
     },

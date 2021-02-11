@@ -15,3 +15,9 @@ rules:
 settings:
   react:
     version: detect
+
+env:
+  browser: true
+
+parserOptions:
+  ecmaVersion: 11

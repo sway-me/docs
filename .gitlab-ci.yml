@@ -41,8 +41,6 @@ quality:
   artifacts:
     reports:
       codequality: quality.json
-  only:
-    - master
 
 
 build:

@@ -27,8 +27,8 @@ depcheck:
 quality:
   cache: {}
   stage: verify
-  tags:
-    - threadripper
+#  tags:
+#    - threadripper
   before_script:
     - echo "Running Quality"
   image: docker:stable

@@ -1663,6 +1663,10 @@
     "@svgr/plugin-svgo" "^5.5.0"
     loader-utils "^2.0.0"
 
+"@sway-me/ui-kit@https://gitlab.com/sway-me/shared/ui-kit/-/archive/v0.1.1/ui-kit-v0.1.0.tar":
+  version "1.0.0"
+  resolved "https://gitlab.com/sway-me/shared/ui-kit/-/archive/v0.1.1/ui-kit-v0.1.0.tar#a4d2d335b69144fce9ea0ab0549047603bfbd18d"
+
 "@szmarczak/http-timer@^1.1.2":
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/@szmarczak/http-timer/-/http-timer-1.1.2.tgz#b1665e2c461a2cd92f4c1bbf50d5454de0d4b421"
@@ -10515,6 +10519,11 @@ use-callback-ref@^1.2.3:
   version "1.2.5"
   resolved "https://registry.yarnpkg.com/use-callback-ref/-/use-callback-ref-1.2.5.tgz#6115ed242cfbaed5915499c0a9842ca2912f38a5"
   integrity sha512-gN3vgMISAgacF7sqsLPByqoePooY3n2emTH59Ur5d/M8eg4WTWu1xp8i8DHjohftIyEx0S08RiYxbffr4j8Peg==
+
+use-custom-element@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/use-custom-element/-/use-custom-element-1.0.5.tgz#d0aa06ac258fad65eeaaa53d613fc58259820a19"
+  integrity sha512-2UO+I22KoprLhhoRMRo40CCWWGhQa3t+cgbu8Mxi6CIbL7+l0JiWefjyB0HQRgyY3vz5O/nFsZR7OoWpehmBMg==
 
 use-sidecar@^1.0.1:
   version "1.0.4"

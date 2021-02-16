@@ -11,10 +11,10 @@
     "clear": "docusaurus clear",
     "gen-css": "node src/scripts/genSvgCss.js",
     "update-data": "node src/scripts/updateData.js",
-    "format": "prettier --write src/",
-    "lint-ci" : "http --quiet \"https://gitlab.com/api/v4/ci/lint?private_token=$GITLAB_TOKEN\" content=@./.gitlab-ci.yml | grep invalid && exit 1 || exit 0",
-    "lint": "eslint --ext js,jsx src --quiet --fix",
-    "depcheck": "npx depcheck --ignore-bin-package=true --skip-missing=true --ignores='@docusaurus/*,@mdx-js/*,clsx,eslint*' ",
+    "format": "prettier src/",
+    "lint-ci": "http --quiet \"https://gitlab.com/api/v4/ci/lint?private_token=$GITLAB_TOKEN\" content=@./.gitlab-ci.yml | grep invalid && exit 1 || exit 0",
+    "lint": "eslint --ext js,jsx src",
+    "depcheck": "npx depcheck --ignore-bin-package=true --skip-missing=true --ignores='@docusaurus/*,@mdx-js/*,eslint*' ",
     "quality": "codeclimate analyze",
     "commit": "yarn format && yarn lint && yarn lint-ci && yarn depcheck && yarn quality &&  yarn build && npx cz"
   },
@@ -22,7 +22,7 @@
     "@docusaurus/core": "2.0.0-alpha.70",
     "@docusaurus/preset-classic": "2.0.0-alpha.70",
     "@mdx-js/react": "^1.6.21",
-    "clsx": "^1.1.1",
+    "@sway-me/ui-kit": "https://gitlab.com/sway-me/shared/ui-kit/-/archive/v0.1.1/ui-kit-v0.1.1.tar",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "react-remove-scroll": "^2.4.1"
@@ -51,10 +51,5 @@
   },
   "engines": {
     "node": ">=14"
-  },
-  "config": {
-    "commitizen": {
-      "path": "cz-emoji"
-    }
   }
 }

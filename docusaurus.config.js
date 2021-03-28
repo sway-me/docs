@@ -20,22 +20,12 @@ module.exports = {
     // },
     navbar: {
       logo: {
-        src: "img/logo.svg",
+        src: "img/logo_white.svg",
       },
       items: [
         {
-          to: "/",
-          label: "intro",
-          position: "left",
-        },
-        {
-          to: "dev-services/getting-started",
-          label: "dev-services",
-          position: "left",
-        },
-        {
           to: "personal-services/getting-started",
-          label: "personal-services",
+          label: "personal services",
           position: "left",
         },
         { to: "mobile/getting-started", label: "mobile", position: "left" },
@@ -48,6 +38,11 @@ module.exports = {
         { to: "cast/getting-started", label: "cast", position: "left" },
         { to: "speaker/getting-started", label: "speaker", position: "left" },
         { to: "watch/getting-started", label: "watch", position: "left" },
+        {
+          to: "dev-services/getting-started",
+          label: "dev services",
+          position: "left",
+        },
         {
           href: "https://gitlab.com/sway-me",
           position: "right",

@@ -1,6 +1,4 @@
 {
-  "name": "sway-docs",
-  "version": "0.0.0",
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
@@ -11,9 +9,9 @@
     "clear": "docusaurus clear",
     "gen-css": "node src/scripts/genSvgCss.js",
     "update-data": "node src/scripts/updateData.js",
-    "format": "prettier src/",
-    "lint-ci": "http --quiet \"https://gitlab.com/api/v4/ci/lint?private_token=$GITLAB_TOKEN\" content=@./.gitlab-ci.yml | grep invalid && exit 1 || exit 0",
-    "lint": "eslint --ext js,jsx src",
+    "format": "prettier --check src/",
+    "lint-ci": "http \"https://gitlab.com/api/v4/ci/lint\" content=@./.gitlab-ci.yml",
+    "lint": "eslint --ext js,jsx src --quiet",
     "depcheck": "npx depcheck --ignore-bin-package=true --skip-missing=true --ignores='@docusaurus/*,@mdx-js/*,eslint*' ",
     "quality": "codeclimate analyze",
     "commit": "yarn format && yarn lint && yarn lint-ci && yarn depcheck && yarn quality &&  yarn build && npx cz"
@@ -48,8 +46,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "engines": {
-    "node": ">=14"
   }
 }

@@ -15,13 +15,22 @@ before_script:
 format:
   stage: verify
   script: yarn format
+  except:
+    - beta
+    - master
 lint:
   stage: verify
   script: yarn lint
+  except:
+    - beta
+    - master
 
 depcheck:
   stage: verify
   script: yarn depcheck
+  except:
+    - beta
+    - master
 
 
 quality:
@@ -39,6 +48,9 @@ quality:
   artifacts:
     reports:
       codequality: quality.json
+  except:
+    - beta
+    - master
 
 
 

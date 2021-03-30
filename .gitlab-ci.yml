@@ -59,12 +59,12 @@ build:
   script:
     - yarn update-data
     - yarn build
+    - rm -rf build/nonbuild
   artifacts:
     paths:
       - build/
-  only:
-    - beta
-    - master
+  rules:
+    - if: $CI_PIPELINE_SOURCE == 'schedule' && $CI_COMMIT_BRANCH == 'beta'
 
 .prep-git: &prep-git
   - apt-get update -qy && apt-get install openssh-client git -qy || apk add openssh-client git
@@ -92,7 +92,7 @@ beta_release:
     - git clean -f -d
     - git pull --allow-unrelated-histories
     - git push -u origin beta
-    - docker build --quiet --tag swayme/docs .
+    - docker build --quiet --tag swayme/docs build
     - |
       echo "
       branches:

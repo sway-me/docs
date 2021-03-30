@@ -1,7 +1,7 @@
 module.exports = {
   title: "S W A Y",
   tagline: "Selfhost your ecosystem",
-  url: "https://docs.sway-me.xyz",
+  url: "https://swayme.xyz",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
@@ -19,10 +19,12 @@ module.exports = {
     //   indexName: "rap",
     // },
     navbar: {
-      logo: {
-        src: "img/logo_white.svg",
-      },
       items: [
+        {
+          href: "https://swayme.xyz",
+          position: "left",
+          className: "header-logo-link",
+        },
         {
           to: "personal-services/getting-started",
           label: "personal services",
@@ -42,6 +44,11 @@ module.exports = {
           to: "dev-services/getting-started",
           label: "dev services",
           position: "left",
+        },
+        {
+          href: "https://wiki.swayme.xyz",
+          position: "right",
+          className: "header-wiki-link",
         },
         {
           href: "https://gitlab.com/sway-me",

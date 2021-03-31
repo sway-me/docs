@@ -9,6 +9,12 @@ module.exports = {
   organizationName: "sway-me", // Usually your GitHub org/user name.
   projectName: "docs", // Usually your repo name.
   themeConfig: {
+    announcementBar: {
+      isCloseable: false,
+      id: "beta",
+      content:
+        "<b>BETA:</b> &nbsp; Many features not implemented. &nbsp; <a href='https://gitlab.com/groups/sway-me/-/boards/'>Contributions welcome</a> &nbsp; 🚀",
+    },
     hideableSidebar: true,
     prism: {
       theme: require("prism-react-renderer/themes/github"),

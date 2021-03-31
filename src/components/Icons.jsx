@@ -21,7 +21,7 @@ export default function Icons({ data, size = 55 }) {
             cursor: "pointer",
           }}
           key={i}
-          href={`/intro/glossary#${name}`}
+          href={`/intro/alternatives#${name}`}
         >
           <div style={{ height: size, width: size }} className={name} />
           <div

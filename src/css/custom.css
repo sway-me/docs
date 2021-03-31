@@ -323,12 +323,3 @@ tr:nth-child(even) {
 .navbar__toggle svg path {
   stroke: white;
 }
-
-.announcementBarContent_node_modules-\@docusaurus-theme-classic-lib-next-theme-AnnouncementBar- {
-  background: var(--pink-grad);
-  color: white;
-}
-.announcementBarContent_node_modules-\@docusaurus-theme-classic-lib-next-theme-AnnouncementBar-
-  > b {
-  color: white;
-}

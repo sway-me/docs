@@ -14,7 +14,7 @@
     "lint": "eslint --ext js,jsx src --quiet",
     "depcheck": "npx depcheck --ignore-bin-package=true --skip-missing=true --ignores='@docusaurus/*,@mdx-js/*,eslint*' ",
     "quality": "codeclimate analyze",
-    "commit": "yarn format && yarn lint && yarn lint-ci && yarn depcheck && yarn quality &&  yarn build && npx cz"
+    "commit": "prettier --write src/ && yarn lint && yarn lint-ci && yarn depcheck && yarn quality &&  yarn build && npx cz"
   },
   "dependencies": {
     "@docusaurus/core": "2.0.0-alpha.70",

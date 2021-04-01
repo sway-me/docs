@@ -14,7 +14,7 @@
   {
     "category": "operatingSystems",
     "name": "arch-linux",
-    "description": "Replaces macOS, ChromeOS, Windows.",
+    "description": "Replaces macOS, ChromeOS, and Windows.",
     "options": [
       {
         "name": "Directory of Repos",
@@ -62,7 +62,7 @@
   {
     "category": "devServices",
     "name": "bitwarden",
-    "description": "Replaces browser based password manager or your memory. Secrets manager.  Optionally, you can have sway auto generate strong secrets and populate bitwarden upon setup. Supports yubikey. <b>There are two instances of Bitwarden.</b>  One to manage your <a href='/dev-services/getting-started'>dev secrets</a> and one one to manage your  <a href='/personal-services/getting-started'>personal secrets</a>. We use the rust based version for both",
+    "description": "Replaces browser based password manager or your memory. Secrets manager.  Optionally, you can have sway auto generate strong secrets and populate bitwarden upon setup. Supports yubikey. <b>There are two instances of Bitwarden.</b>  One to manage your <a href='/dev-services/getting-started'>dev secrets</a> and one one to manage your  <a href='/personal-services/getting-started'>personal secrets</a>. We use the rust based version for both.",
     "options": [
       {
         "name": "Main Repo",
@@ -84,7 +84,7 @@
   {
     "category": "personalServices",
     "name": "calibre-web",
-    "description": "Replaces kindle, apple books (iBooks), google play books. Web Client for ebooks. Part of sway <a href='/personal-services/getting-started'>personal services</a>.",
+    "description": "Replaces kindle, Apple books (iBooks), Google play books. Web Client for ebooks. Part of sway <a href='/personal-services/getting-started'>personal services</a>.",
     "options": [
       {
         "name": "Main  Repo",
@@ -96,7 +96,7 @@
   {
     "category": "terminalClients",
     "name": "castero",
-    "description": "Replaces apple podcasts or google podcasts. Ncurses style podcast player. Relies on server based <code>podcasts.xml</code> file. Part of sway <a href='/workstation/getting/started'>workstation</a>.",
+    "description": "Replaces Apple podcasts or Google podcasts. Ncurses style podcast player. Relies on server based <code>podcasts.xml</code> file. Part of sway <a href='/workstation/getting/started'>workstation</a>.",
     "options": [
       {
         "name": "Main Repo",
@@ -120,7 +120,7 @@
   {
     "category": "personalServices",
     "name": "collabora",
-    "description": "Replaces MS Office, Google Docs, iWork. Libre Office nextcloud app and android client.  Uses syncthing  to sync files. Uses nextcloud as a web frontend. Part of sway <a href='/personal-services/getting-started'>personal services</a>.",
+    "description": "Replaces MS Office, Google Docs, iWork. Libre Office Nextcloud app and Android client.  Uses syncthing  to sync files. Uses Nextcloud as a web frontend. Part of sway <a href='/personal-services/getting-started'>personal services</a>.",
     "options": [
       {
         "name": "Main Repo",
@@ -144,7 +144,7 @@
   {
     "category": "terminalClients",
     "name": "emacs",
-    "description": "Replaces notepad++, Sublime. Sway uses Doom emacs. Maintained configurations you can start with.",
+    "description": "Replaces Notepad++, Sublime. Sway uses Doom emacs. Maintained configurations to get you started.",
     "options": [
       {
         "name": "Main Repo",
@@ -192,7 +192,7 @@
   {
     "category": "androidClients",
     "name": "forecastie",
-    "description": "Weather app. Part of sway <a href='/personal-services/getting-started'>personal services</a>.",
+    "description": "Weather app, part of sway <a href='/personal-services/getting-started'>personal services</a>.",
     "options": [
       {
         "name": "Android",
@@ -204,7 +204,7 @@
   {
     "category": "personalServices",
     "name": "funkwhale",
-    "description": "Replaces Spotify, apple music. Music Server inspired by grooveshark. Users can easily share their library with others. Part of sway <a href='/personal-services/getting-started'>personal services</a>.",
+    "description": "Replaces Spotify, Apple music. Music server inspired by grooveshark. Users can easily share their library with others. Part of sway <a href='/personal-services/getting-started'>personal services</a>.",
     "options": [
       {
         "name": "Self hosted Gitlab",
@@ -240,7 +240,7 @@
   {
     "category": "androidClients",
     "name": "glasnost",
-    "description": "Third party android client for gitlab. Supports multiple hosts, fingerprint auth,  repo browsing and merge requests.",
+    "description": "Third party Android client for gitlab. Supports multiple hosts, fingerprint authentication, repo browsing and merge requests.",
     "options": [
       {
         "name": "Main Repo",
@@ -252,7 +252,7 @@
   {
     "category": "publicWebClients",
     "name": "glowing-bear",
-    "description": "Third party web client for weechat.",
+    "description": "Third party web client for Weechat.",
     "options": [
       {
         "name": "Main Repo",
@@ -264,7 +264,7 @@
   {
     "category": "devServices",
     "name": "gorush",
-    "description": "Replaces AWS SNS (mobile push only). Push notification service for iOS and android.  Part of sway <a href='/dev-services/getting-started'>dev services</a>.",
+    "description": "Replaces AWS SNS (mobile push only). Push notification service for iOS and Android.  Part of sway <a href='/dev-services/getting-started'>dev services</a>.",
     "options": [
       {
         "name": "Main Repo",
@@ -288,7 +288,7 @@
   {
     "category": "personalServices",
     "name": "home-assistant",
-    "description": "Replaces HomeKit, Google Home. Part of sway <a href='/personal-services/getting-started'>personal services</a>.",
+    "description": "Replaces HomeKit, Google Home and Alexa. Part of sway <a href='/personal-services/getting-started'>personal services</a>.",
     "options": [
       {
         "name": "Backend Service",
@@ -356,7 +356,7 @@
   {
     "category": "androidClients",
     "name": "k9-mail",
-    "description": "Replaces Apple Mail (iMail), GMail android app. Email client with neomutt dna.",
+    "description": "Replaces Apple Mail (iMail), GMail Android app. Email client with neomutt dna.",
     "options": [
       {
         "name": "Main Repo",
@@ -368,7 +368,7 @@
   {
     "category": "devServices",
     "name": "kafka",
-    "description": "Replaces AWS Kinesis.  Stream processing.  Comes with schema registry and a grafana dashboard. Part of sway <a href='/dev-services/getting-started'>dev services</a>.",
+    "description": "Replaces AWS Kinesis.  A stream processor that comes with schema registry and a grafana dashboard. Part of sway <a href='/dev-services/getting-started'>dev services</a>.",
     "options": [
       {
         "name": "Admin Client",
@@ -385,7 +385,7 @@
   {
     "category": "devServices",
     "name": "keycloak",
-    "description": "Replaces AWS Cognito aka Identity Management. Part of sway <a href='/dev-services/getting-started'>dev services</a>.",
+    "description": "Replaces AWS Cognito also known as Identity Management. Part of sway <a href='/dev-services/getting-started'>dev services</a>.",
     "options": [
       {
         "name": "Main Repo",
@@ -421,7 +421,7 @@
   {
     "category": "devServices",
     "name": "kong",
-    "description": "Replaces AWS, Azure, and GCP API Gateway. Supports Keycloak Auth. Part of sway <a href='/dev-services/getting-started'>dev services</a>.",
+    "description": "Replaces AWS, Azure, and GCP API Gateway. Supports Keycloak auth. Part of sway <a href='/dev-services/getting-started'>dev services</a>.",
     "options": [
       {
         "name": "Backend Service",
@@ -438,7 +438,7 @@
   {
     "category": "androidClients",
     "name": "librera",
-    "description": "Replaces Android ebook apps.  Syncing is done via syncthing.  Syncs with main calibre-web ebook directory.",
+    "description": "Replaces Android ebook apps.  Syncing is done via syncthing.  Syncs with main Calibre-Web ebook directory.",
     "options": [
       {
         "name": "Main Repo",
@@ -513,7 +513,7 @@
   {
     "category": "devServices",
     "name": "matrix",
-    "description": "Replaces Slack. Team communication.  Web Client available at element.io.  Compatible with weechat. Part of sway <a href='/dev-services/getting-started'>dev services</a>.",
+    "description": "Replaces Slack team communication.  Web Client available at element.io.  Compatible with Weechat. Part of sway <a href='/dev-services/getting-started'>dev services</a>.",
     "options": [
       {
         "name": "Backend Service",
@@ -525,7 +525,7 @@
   {
     "category": "androidClients",
     "name": "microg",
-    "description": "Replaces google's proprietary services. <a href='/home/resister/Code/Build/sway/docs/docs/mobile/getting-started.mdx'>Signature spoofing</a> must be enabled.",
+    "description": "Replaces Google's proprietary services. <a href='/home/resister/Code/Build/sway/docs/docs/mobile/getting-started.mdx'>Signature spoofing</a> must be enabled.",
     "options": [
       {
         "name": "Main Repo",
@@ -537,7 +537,7 @@
   {
     "category": "devServices",
     "name": "minio",
-    "description": "Replaces AWS S3, Cloud Storage, etc. Compatible with the  S3 API. Part of sway <a href='/dev-services/getting-started'>dev services</a>.",
+    "description": "Replaces AWS S3, Cloud Storage, etc. Compatible with the S3 API. Part of sway <a href='/dev-services/getting-started'>dev services</a>.",
     "options": [
       {
         "name": "Backend Service",
@@ -578,7 +578,7 @@
   {
     "category": "personalServices",
     "name": "mycroft",
-    "description": "Replaces Google Assistant, Alexa, etc. AI platform/Smart Assistant. Part of sway <a href='/personal-services/getting-started'>personal services</a>.",
+    "description": "Replaces Siri, Google Assistant, Alexa. AI platform/Smart Assistant. Part of sway <a href='/personal-services/getting-started'>personal services</a>.",
     "options": [
       {
         "name": "Main Repo",
@@ -684,7 +684,7 @@
   {
     "category": "personalServices",
     "name": "photoprism",
-    "description": "Alternative to google photos, and Apple Photos (iPhotos). Deep learning enabled. Uses syncthing to sync with clients. Part of sway <a href='/personal-services/getting-started'>personal services</a>.",
+    "description": "Alternative to Google photos, and Apple Photos (iPhotos). Deep learning enabled. Uses syncthing to sync with clients. Part of sway <a href='/personal-services/getting-started'>personal services</a>.",
     "options": [
       {
         "name": "Main Repo",
@@ -742,7 +742,7 @@
   {
     "category": "androidClients",
     "name": "reader",
-    "description": "Replaces Apple News, Google News, etc. An android client for selfoss rss reader.",
+    "description": "Replaces Apple News, Google News, etc. An android client for Selfoss rss reader.",
     "options": [
       {
         "name": "Main Repo",
@@ -771,7 +771,7 @@
   {
     "category": "personalServices",
     "name": "selfoss",
-    "description": "Backend to replace apple news and google news. RSS based. Part of sway <a href='/personal-services/getting-started'>personal services</a>.",
+    "description": "Backend to replace Apple news and Google news. RSS based. Part of sway <a href='/personal-services/getting-started'>personal services</a>.",
     "options": [
       {
         "name": "Main Repo",
@@ -795,7 +795,7 @@
   {
     "category": "androidClients",
     "name": "simple-calendar",
-    "description": "An android calendar client. Syncing is done via dav5x on the android side and  <a href='#nextcloud'>nextcloud</a> on the server sie.",
+    "description": "An Android calendar client. Syncing is done via dav5x on the Android side and  <a href='#nextcloud'>nextcloud</a> on the server sie.",
     "options": [
       {
         "name": "Main Repo",
@@ -807,7 +807,7 @@
   {
     "category": "androidClients",
     "name": "simple-contacts",
-    "description": "An android contacts client. Syncing is done via dav5x on the android side and  <a href='#nextcloud'>nextcloud</a> on the server sie.",
+    "description": "An Android contacts client. Syncing is done via dav5x on the Android side and  <a href='#nextcloud'>nextcloud</a> on the server sie.",
     "options": [
       {
         "name": "Main Repo",
@@ -819,7 +819,7 @@
   {
     "category": "androidClients",
     "name": "simple-gallery",
-    "description": "An android photo client.  Syncing is done via syncthing.  Syncs with main <a href='#photoprism'>photoprism</a> photo directory.",
+    "description": "An Android photo client.  Syncing is done via syncthing.  Syncs with main <a href='#photoprism'>photoprism</a> photo directory.",
     "options": [
       {
         "name": "Simple Gallery",
@@ -831,7 +831,7 @@
   {
     "category": "personalServices",
     "name": "syncthing",
-    "description": "Replaces dropbox. Used to sync files between personal services and clients. Linux based clients use a local web server that runs as a daemon service. While android  based clients, uses the app.  Part of sway <a href='/personal-services/getting-started'>personal services</a>.",
+    "description": "Replaces Dropbox, iCloud drive, Google drive and One drive. Used to sync files between personal services and clients. Linux based clients use a local web server that runs as a daemon service. While android  based clients, uses the app.  Part of sway <a href='/personal-services/getting-started'>personal services</a>.",
     "options": [
       {
         "name": "Backend Service",
@@ -848,7 +848,7 @@
   {
     "category": "androidClients",
     "name": "termux",
-    "description": "An android terminal. Full access to linux kernel/file system.  Almost identical to the Debian terminal, but Arch linux can also be installed.",
+    "description": "An Android terminal. Full access to Linux kernel/file system.  Almost identical to the Debian terminal, but Arch linux can also be installed.",
     "options": [
       {
         "name": "Main Repo",
@@ -872,7 +872,7 @@
   {
     "category": "devServices",
     "name": "traefik",
-    "description": "Container routing and cert management. Part of sway <a href='/dev-services/getting-started'>dev services</a>.",
+    "description": "Container routing and certification management (encryption). Part of sway <a href='/dev-services/getting-started'>dev services</a>.",
     "options": [
       {
         "name": "Main Repo",
@@ -884,7 +884,7 @@
   {
     "category": "androidClients",
     "name": "tusky",
-    "description": "An android client for  mastodon (twitter alternative).",
+    "description": "An Android client for  Mastodon (twitter alternative).",
     "options": [
       {
         "name": "Main Repo",
@@ -896,7 +896,7 @@
   {
     "category": "androidClients",
     "name": "voice",
-    "description": "Replaces Audible. An android audiobook client.  Syncing is done via syncthing.  Syncs with main audiobook directory.",
+    "description": "Replaces Audible Android audiobook client.  Syncing is done via syncthing.  Syncs with main audiobook directory.",
     "options": [
       {
         "name": "Main Repo",
@@ -920,7 +920,7 @@
   {
     "category": "androidClients",
     "name": "weechat-android",
-    "description": "Third party android client for weechat.",
+    "description": "Third party Android client for weechat.",
     "options": [
       {
         "name": "Main Repo",

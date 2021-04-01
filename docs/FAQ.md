@@ -12,3 +12,5 @@ sidebar_label: FAQ
 If you can't upgrade  **AND** you have a namecheap API key, the following command will update all of you alias records. 
 
 `NAMECHEAP_KEY=<YOUR namecheap key> sway namecheap update ip`
+
+Also the [hoppy](https://hoppy.network) service has worked as a solution for some.

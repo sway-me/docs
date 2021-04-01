@@ -5,8 +5,7 @@
  */
 
 /* You can override the default Infima variables here. */
-@import "base.css";
-@import url("https://minio.resistr.life/sway-me/shared/ui-kit/base.css");
+@import url("https://minio.swayme.xyz/ui-kit/base.css");
 @import "svg.css";
 
 :root {

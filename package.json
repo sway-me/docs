@@ -14,13 +14,13 @@
     "lint": "eslint --ext js,jsx src --quiet",
     "depcheck": "npx depcheck --ignore-bin-package=true --skip-missing=true --ignores='@docusaurus/*,@mdx-js/*,eslint*' ",
     "quality": "codeclimate analyze",
-    "commit": "prettier --write src/ && yarn lint && yarn lint-ci && yarn depcheck && yarn quality &&  yarn build && npx cz"
+    "commit": "yarn format && yarn lint && yarn lint-ci && yarn depcheck && yarn quality &&  yarn build && npx cz"
   },
   "dependencies": {
     "@docusaurus/core": "2.0.0-alpha.70",
     "@docusaurus/preset-classic": "2.0.0-alpha.70",
     "@mdx-js/react": "^1.6.21",
-    "@sway-me/ui-kit": "https://gitlab.com/sway-me/shared/ui-kit/-/archive/v0.1.4/ui-kit-v0.1.4.tar",
+    "@sway-me/ui-kit": "https://gitlab.com/sway-me/shared/ui-kit/-/archive/v0.1.7/ui-kit-v0.1.7.tar",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "react-remove-scroll": "^2.4.1"

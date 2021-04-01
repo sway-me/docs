@@ -3,7 +3,7 @@ import React from "react";
 
 const Footer = () => {
   if (ExecutionEnvironment.canUseDOM) {
-    import("@sway-me/ui-kit/sway-ui");
+    import("@sway-me/ui-kit/components");
     return (
       <div
         dangerouslySetInnerHTML={{ __html: "<sway-footer></sway-footer>" }}
